@@ -6,6 +6,7 @@ import { FiltersProvider } from "../contexts/filters.context";
 import Nav from "./Navbar";
 import FavoriteJokeList from "./FavoriteJokeList";
 import JokeList from "./JokeList";
+import Footer from "./Footer";
 import SharedJoke from "./SharedJoke";
 import ScrollToTop from "./ScrollToTop";
 
@@ -30,6 +31,7 @@ function App() {
                       <div className={classes.toolbar} />
                       <JokeList />
                     </main>
+                    <Footer />
                   </div>
                 </>
               )}
@@ -45,6 +47,7 @@ function App() {
                       <div className={classes.toolbar} />
                       <FavoriteJokeList />
                     </main>
+                    <Footer />
                   </div>
                 </>
               )}
@@ -60,6 +63,7 @@ function App() {
                       <div className={classes.toolbar} />
                       <SharedJoke {...routeProps} />
                     </main>
+                    <Footer />
                   </div>
                 </>
               )}
