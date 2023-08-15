@@ -7,7 +7,6 @@ import Nav from "./Navbar";
 import FavoriteJokeList from "./FavoriteJokeList";
 import JokeList from "./JokeList";
 import SharedJoke from "./SharedJoke";
-import Footer from "./Footer";
 import ScrollToTop from "./ScrollToTop";
 
 import useStyles from "../styles/AppStyles";
@@ -31,7 +30,6 @@ function App() {
                       <div className={classes.toolbar} />
                       <JokeList />
                     </main>
-                    <Footer />
                   </div>
                 </>
               )}
@@ -47,7 +45,6 @@ function App() {
                       <div className={classes.toolbar} />
                       <FavoriteJokeList />
                     </main>
-                    <Footer />
                   </div>
                 </>
               )}
@@ -63,7 +60,6 @@ function App() {
                       <div className={classes.toolbar} />
                       <SharedJoke {...routeProps} />
                     </main>
-                    <Footer />
                   </div>
                 </>
               )}

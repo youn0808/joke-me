@@ -35,7 +35,6 @@ function Home(props) {
   const container =
     window !== undefined ? () => window().document.body : undefined;
 
-  console.log("Home");
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -56,7 +55,7 @@ function Home(props) {
               <img src={logo} alt="logo" className={classes.logo} />
             </Link>
             <Typography className={classes.name} variant="h6" noWrap>
-              <Link to="/">Jokes</Link>
+              <Link to="/">Joke me</Link>
             </Typography>
           </div>
 

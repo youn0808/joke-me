@@ -83,7 +83,6 @@ function Drawer({ handleDrawerClose, disabledDrawer }) {
   };
 
   const classes = useStyles();
-  console.log("Drawer");
   return (
     <div>
       <div className={classes.toolbar}>
@@ -107,7 +106,7 @@ function Drawer({ handleDrawerClose, disabledDrawer }) {
         <InputBase
           onChange={handleSearch}
           value={filters.term}
-          placeholder="search..."
+          placeholder="Search .."
           classes={{
             root: classes.inputRoot,
             input: classes.inputInput,

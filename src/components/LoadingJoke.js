@@ -5,7 +5,6 @@ import useStyles from "../styles/LoadingJokeStyles";
 
 export default function LoadingJoke() {
   const classes = useStyles();
-  console.log("LoadingJoke");
   return (
     <div className={classes.root}>
       <Skeleton

@@ -7,7 +7,7 @@ export default makeStyles((theme) => ({
     alignItems: "center",
   },
   drawerHeader: {
-    width: "100%",
+    width: "80%",
     display: "flex",
     justifyContent: "space-between",
   },

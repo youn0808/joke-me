@@ -36,14 +36,6 @@ function TwoPartJoke({ joke }) {
     setAnchorEl(event.currentTarget);
   };
 
-  const handleShareLink = () => {
-    setSnackPack((prev) => [
-      ...prev,
-      { message: "Link Copied", key: new Date().getTime() },
-    ]);
-    setAnchorEl(null);
-  };
-
   const handleShareJoke = () => {
     setSnackPack((prev) => [
       ...prev,
@@ -110,7 +102,6 @@ function TwoPartJoke({ joke }) {
     }
   };
 
-  console.log("TwoPartJoke");
   return (
     <Card className={classes.root} variant="outlined">
       <CardContent>
@@ -158,14 +149,6 @@ function TwoPartJoke({ joke }) {
             open={Boolean(anchorEl)}
             onClose={handleShareClose}
           >
-            <CopyToClipboard text={getJokeUrl(joke)}>
-              <MenuItem onClick={handleShareLink}>
-                <ListItemIcon>
-                  <LinkIcon fontSize="small" />
-                </ListItemIcon>
-                Copy Link
-              </MenuItem>
-            </CopyToClipboard>
             <CopyToClipboard text={`${joke.setup}\n${joke.delivery}`}>
               <MenuItem onClick={handleShareJoke}>
                 <ListItemIcon>
